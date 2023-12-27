@@ -45,7 +45,7 @@ public class SeleniumTest {
         driver.switchTo().frame(iframe);
 
         String txtActualBerhasilLogin = driver.findElement(By.xpath("//strong[.='Thanks for connecting!']")).getText();
-        String txtExpectedBerhasilLogin = "Welcome to Brick&Bolt! (Thanks for connecting!)";
+        String txtExpectedBerhasilLogin = "Thanks for connecting!";
 
         Assert.assertEquals(txtActualBerhasilLogin,txtExpectedBerhasilLogin);
 
